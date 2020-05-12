@@ -6,4 +6,12 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
 /*# sourceMappingURL=main.css.map */
