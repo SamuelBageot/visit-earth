@@ -1,0 +1,23 @@
+.city {
+    // border: 1px solid black;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10rem 0;
+
+    &__text {
+        // border: 1px solid red;
+        max-width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__image {
+        max-width: 55%;
+        // height: auto;
+        max-height: 55rem;
+    }
+}

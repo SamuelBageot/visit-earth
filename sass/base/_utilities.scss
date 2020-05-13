@@ -2,3 +2,25 @@
 .u-margin-medium { margin: 3rem 0 };
 .u-margin-big { margin: 5rem 0 };
 .u-margin-massive { margin: 15rem 0 };
+
+.u-center { margin: 0 auto };
+
+.text-center { text-align: center };
+
+.u-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+    width: 100%;
+
+    &__grey {
+        border: 1px solid rgba(230, 230, 230, 0.644);
+    }
+
+    &__blue {
+        border: 1px solid #c8d3f5;
+    }
+}

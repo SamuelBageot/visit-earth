@@ -1,0 +1,35 @@
+.section-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+    margin-top: -10vh;
+}
+
+.presentation {
+    // border: 1px solid black;
+    max-width: 65rem;
+    margin-top: 4vh;
+
+    &__tagline {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        line-height: 2.8rem;
+    }
+}
+
+.section-cities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10vh;
+
+    &__desktop {
+
+    }
+
+    &__mobile {
+        display: none;
+    }
+}
