@@ -346,6 +346,132 @@ body {
   outline: none;
 }
 
+.customers {
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  width: 80%;
+}
+
+.customers__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80rem;
+  border-radius: 5px;
+}
+
+.portraits {
+  width: 50%;
+  height: 70%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portraits__pic {
+  border-radius: 50%;
+  height: 6rem;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.portraits__pic:hover:not(:last-child) {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.portraits__pic:nth-child(1) {
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  height: 8rem;
+}
+
+.portraits__pic:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.portraits__pic:nth-child(3) {
+  right: 0;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+}
+
+.portraits__pic:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+}
+
+.portraits__pic:nth-child(5) {
+  position: absolute;
+  bottom: 15%;
+  left: 35%;
+}
+
+.portraits__pic:nth-child(6) {
+  position: absolute;
+  right: 2rem;
+  bottom: 40%;
+  height: 12rem;
+  border: 10px solid #e9e5f0;
+}
+
+.review {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review__text {
+  width: 95%;
+  height: 22rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 0 2rem;
+  border-radius: 10px;
+  border: 3px solid #e9e5f0;
+}
+
+.review__citation {
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.review__author {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #9c9c9c;
+}
+
 .header {
   background-color: #7fc3ba;
   display: -webkit-box;
@@ -554,5 +680,21 @@ body {
 
 .section-cities__mobile {
   display: none;
+}
+
+.section-feedbacks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

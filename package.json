@@ -18,5 +18,8 @@
   "homepage": "https://github.com/SamuelBageot/visit-earth#readme",
   "devDependencies": {
     "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }

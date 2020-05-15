@@ -1,0 +1,106 @@
+.customers {
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    width: 80%;
+
+    &__box {
+        // border: 2px solid #e9e5f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80rem;
+        // width: 80%;
+        border-radius: 5px;
+    }
+}
+
+.portraits {
+    // border: 2px solid #5111be;
+    width: 50%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    &__pic {
+        border-radius: 50%;
+        height: 6rem;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover:not(:last-child) {
+            transform: scale(1.1);
+        }
+
+        &:nth-child(1) {
+            position: absolute;
+            top: 42%;
+            left: 10%;
+            height: 8rem;
+        }
+
+        &:nth-child(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(3) {
+            right: 0;
+            position: absolute;
+            top: 15%;
+            left: 35%;
+        }
+
+        &:nth-child(4) {
+            position: absolute;
+            bottom: 0;
+        }
+
+        &:nth-child(5) {
+            position: absolute;
+            bottom: 15%;
+            left: 35%;
+        }
+
+        &:nth-child(6) {
+            position: absolute;
+            right: 2rem;
+            bottom: 40%;
+            height: 12rem;
+            border: 10px solid #e9e5f0;
+        }
+    }
+}
+
+.review {
+    // border: 1px solid red;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    &__text {
+        width: 95%;
+        height: 22rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 0 2rem;
+        border-radius: 10px;
+        border: 3px solid #e9e5f0;
+    }
+    
+    &__citation {
+        font-size: 2.2rem;
+        font-style: italic;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    &__author {
+        font-size: $default-font-size;
+        font-weight: 600;
+        color: rgb(156, 156, 156);
+    }
+}
