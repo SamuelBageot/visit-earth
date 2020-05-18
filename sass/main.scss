@@ -1,4 +1,5 @@
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 @import 'base/base';
 @import 'base/typography';
@@ -10,7 +11,9 @@
 @import 'components/form';
 @import 'components/customers';
 
+@import 'layout/main';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/navigation';
 
 @import 'pages/home';

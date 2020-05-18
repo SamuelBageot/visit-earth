@@ -26,11 +26,17 @@
     margin-top: -10vh;
 
     &__desktop {
-
+        @include respond(tab-port) {
+            display: none;
+        }
     }
 
     &__mobile {
         display: none;
+
+        @include respond(tab-port) {
+            display: flex;
+        }
     }
 }
 

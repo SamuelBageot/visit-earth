@@ -1,0 +1,5 @@
+main {
+    @include respond(tab-port) {
+        padding: 0 1.5rem;
+    }
+}
