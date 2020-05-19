@@ -7,12 +7,28 @@
     <title>Visit Earth</title>
 </head>
 <body>
+<div class="container" style="overflow-x: hidden; position: relative;">
 
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
     <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
     </label>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <nav>
+            <ul class="sidebar__menu">
+                <li class="sidebar__item"><a class="sidebar__link active" href="/">Home</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="/">Videos</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="/">Archive</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="/">About</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="/">Mission</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="/">Projects</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="/">Donate</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- HEADER -->
     <header class="header">
@@ -299,8 +315,12 @@
         <p class="footer__copyright">© All rights reserved by Syed Miraj</p>
     </footer>
 
+</div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <script src="./js/customers.js"></script>
+    <script src="./js/sidebar.js"></script>
+
 
 </body>
 </html>

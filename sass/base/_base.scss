@@ -26,3 +26,7 @@ body {
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+body.sidebarOpen {
+    overflow: hidden;
+}

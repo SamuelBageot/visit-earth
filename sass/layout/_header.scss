@@ -45,11 +45,11 @@
     &__text-box {
         // border: 1px solid black;
         position: absolute;
-        top: 35%;
+        top: 6%;
         max-width: 35%;
 
         @include respond(tab-land) {
-            top: 30%;
+            top: 8%;
             max-width: 53%;
         }
 
