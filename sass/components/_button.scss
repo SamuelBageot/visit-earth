@@ -6,7 +6,6 @@
 }
 
 .btn {
-
     width: 17rem;
     padding: 1.2rem 0;
     border-radius: 2.5rem;
@@ -53,39 +52,19 @@
     }
     
     &--blue {
-        background-color: #57acce;
-        color: $font-color-1;
-        border: 1px solid #79c8e7;
-        box-shadow: 2px 3px 20px rgb(122, 122, 122);
-        transition: all .2s;
-        
-        &:hover {
-            transform: translateY(-2px);
-            box-shadow: 3px 6px 25px rgb(122, 122, 122);
-
-            @include respond(tab-port) {
-                transform: translateY(0);
-                box-shadow: 2px 3px 20px rgb(122, 122, 122);
-            }
-        }
+        @include buttonColor(linear-gradient(to right, #578de5, #87c5c2));
     }
 
+    &--blue-purple {
+        @include buttonColor(linear-gradient(to right, #a286b4, #b5c8fd));
+    }
+    
     &--yellow {
-        background-color: $color-secondary;
-        color: black;
-        border: 1px solid $color-secondary;
-        box-shadow: 2px 3px 20px rgb(122, 122, 122);
-        transition: all .2s;
-        
-        &:hover {
-            transform: translateY(-2px);
-            box-shadow: 3px 6px 25px rgb(122, 122, 122);
+        @include buttonColor($color-secondary, 1px solid $color-secondary, black);
+    }
 
-            @include respond(tab-port) {
-                transform: translateY(0);
-                box-shadow: 2px 3px 20px rgb(122, 122, 122);            
-            }
-        }
+    &--yellow-orange {
+        @include buttonColor(linear-gradient(to right, #fac268, #f98642));
     }
     
     &--grey {
