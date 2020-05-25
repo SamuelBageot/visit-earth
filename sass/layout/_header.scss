@@ -16,12 +16,12 @@
     }
     
     &-wrapper {
-        background: url('../../assets/images/fond2.PNG') 2% 20%/15% no-repeat, url('../../assets/images/fond.PNG') right 55%/50% no-repeat;
+        background: url('../../assets/images/fond2.PNG') 2% 15%/15% no-repeat, url('../../assets/images/fond.PNG') right 55%/50% no-repeat;
         height: 100vh;
         width: 60%;
 
         @include respond(tab-land) {
-            background: url('../../assets/images/fond.PNG') 85% 55%/50% no-repeat;
+            background: url('../../assets/images/fond2.PNG') 2% 20%/15% no-repeat, url('../../assets/images/fond.PNG') 85% 55%/50% no-repeat;
             width: 90%;
         }
 

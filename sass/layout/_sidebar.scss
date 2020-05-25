@@ -32,9 +32,9 @@
         }
     }
 
-}
+    &.open {
+        transform: translateX(0);
+        backdrop-filter: blur(8px);
+    }
 
-.sidebar.open {
-    transform: translateX(0);
-    backdrop-filter: blur(8px);
 }
