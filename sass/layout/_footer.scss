@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    // justify-content: center;
     align-items: center;
     padding-top: 10rem;
 
@@ -29,7 +28,6 @@
     }
 
     &__up {
-        // border: 1px solid black;
         width: 75%;
         display: flex;
         flex-direction: column;
@@ -51,7 +49,6 @@
     }
     
     &__down {
-        // border: 1px solid black;
         width: 75%;
         display: flex;
         justify-content: space-between;
@@ -105,7 +102,6 @@
     
     &__list {
         list-style: none;
-        // max-width: 10rem;
     }
     
     &__item {

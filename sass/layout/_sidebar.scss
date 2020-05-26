@@ -3,7 +3,6 @@
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
-    // right: 0;
     background-color: rgba(51, 51, 51, 0.719);
     z-index: 5000;
     transform: translateX(100%);
@@ -24,7 +23,7 @@
     &__link {
         text-decoration: none;
         font-size: 3.5rem;
-        color: white;
+        color: $font-color-1;
         padding: 1rem;
 
         &.active {

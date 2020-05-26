@@ -1,7 +1,6 @@
 .customers {
-    // border: 1px solid black;
     margin-top: 1rem;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
     width: 80%;
 
     @include respond(phone) {
@@ -9,12 +8,10 @@
     }
 
     &__box {
-        // border: 2px solid #e9e5f0;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 80rem;
-        // width: 80%;
         border-radius: 5px;
         
         @include respond(phone) {
@@ -26,7 +23,6 @@
 }
 
 .portraits {
-    // border: 2px solid #5111be;
     width: 50%;
     height: 70%;
     position: relative;
@@ -90,7 +86,7 @@
             bottom: 0;
 
             @include respond(phone) {
-                bottom: 6%;
+                bottom: 14%;
                 filter: opacity(.4);
             }
         }
@@ -101,7 +97,7 @@
             left: 35%;
 
             @include respond(phone) {
-                bottom: 15%;
+                bottom: 6%;
                 left: 80%;
                 filter: opacity(.4);
             }
@@ -118,7 +114,6 @@
                 height: 13rem;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                // right: 15rem;
                 bottom: -5rem;
             }
         }
@@ -126,7 +121,6 @@
 }
 
 .review {
-    // border: 1px solid red;
     width: 50%;
     height: 100%;
     display: flex;
@@ -145,14 +139,51 @@
         flex-direction: column;
         justify-content: center;
         padding: 0 0 0 2rem;
+        background-color: $color-white;
         border-radius: 10px;
         border: 3px solid #e9e5f0;
+        position: relative;
         
         @include respond(phone) {
             border: 1px solid #e9e5f0;
             width: 100%;
             height: 15rem;
             box-shadow: 1px 1px 4px rgba(200, 200, 200, 0.356);
+        }
+
+        &::before {
+            top: -8rem;
+            left: -3rem;
+            z-index: -1000;
+            color: #e9e5f0;
+            position: absolute;
+            content: '\f10d';
+            font-family: "Font Awesome 5 Free";
+            font-size: 10rem;
+            font-weight: 900;
+            
+            @include respond(phone) {
+                top: -4rem;
+                font-size: 6rem;
+            }
+        }
+        
+        &::after {
+            top: 17rem;
+            right: -3rem;
+            transform: rotate(180deg);
+            z-index: -1000;
+            color: #e9e5f0;
+            position: absolute;
+            content: '\f10d';
+            font-family: "Font Awesome 5 Free";
+            font-size: 10rem;
+            font-weight: 900;
+
+            @include respond(phone) {
+                top: 12rem;
+                font-size: 6rem;
+            }
         }
     }
     

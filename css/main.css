@@ -303,26 +303,6 @@ body.sidebarOpen {
   margin-right: 2rem;
 }
 
-.btn--white {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.btn--white:hover {
-  background-color: white;
-  color: #7fc3ba;
-}
-
-@media (max-width: 37.5em) {
-  .btn--white:hover {
-    background-color: transparent;
-    color: white;
-  }
-}
-
 .btn--blue {
   background: -webkit-gradient(linear, left top, right top, from(#578de5), to(#87c5c2));
   background: linear-gradient(to right, #578de5, #87c5c2);
@@ -345,8 +325,6 @@ body.sidebarOpen {
   .btn--blue:hover {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-box-shadow: 2px 3px 20px #7a7a7a;
-            box-shadow: 2px 3px 20px #7a7a7a;
   }
 }
 
@@ -372,8 +350,6 @@ body.sidebarOpen {
   .btn--blue-purple:hover {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-box-shadow: 2px 3px 20px #7a7a7a;
-            box-shadow: 2px 3px 20px #7a7a7a;
   }
 }
 
@@ -398,8 +374,6 @@ body.sidebarOpen {
   .btn--yellow:hover {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-box-shadow: 2px 3px 20px #7a7a7a;
-            box-shadow: 2px 3px 20px #7a7a7a;
   }
 }
 
@@ -425,8 +399,26 @@ body.sidebarOpen {
   .btn--yellow-orange:hover {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-box-shadow: 2px 3px 20px #7a7a7a;
-            box-shadow: 2px 3px 20px #7a7a7a;
+  }
+}
+
+.btn--white {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn--white:hover {
+  background-color: white;
+  color: #7fc3ba;
+}
+
+@media (max-width: 37.5em) {
+  .btn--white:hover {
+    background-color: transparent;
+    color: white;
   }
 }
 
@@ -434,6 +426,8 @@ body.sidebarOpen {
   background-color: transparent;
   border: 1px solid #5a5a5a;
   color: #5a5a5a;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .city {
@@ -578,7 +572,7 @@ body.sidebarOpen {
 
 .customers {
   margin-top: 1rem;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
   width: 80%;
 }
 
@@ -700,7 +694,7 @@ body.sidebarOpen {
 
 @media (max-width: 37.5em) {
   .portraits__pic:nth-child(4) {
-    bottom: 6%;
+    bottom: 14%;
     -webkit-filter: opacity(0.4);
             filter: opacity(0.4);
   }
@@ -714,7 +708,7 @@ body.sidebarOpen {
 
 @media (max-width: 37.5em) {
   .portraits__pic:nth-child(5) {
-    bottom: 15%;
+    bottom: 6%;
     left: 80%;
     -webkit-filter: opacity(0.4);
             filter: opacity(0.4);
@@ -774,8 +768,10 @@ body.sidebarOpen {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 0 0 2rem;
+  background-color: #fff;
   border-radius: 10px;
   border: 3px solid #e9e5f0;
+  position: relative;
 }
 
 @media (max-width: 37.5em) {
@@ -785,6 +781,46 @@ body.sidebarOpen {
     height: 15rem;
     -webkit-box-shadow: 1px 1px 4px rgba(200, 200, 200, 0.356);
             box-shadow: 1px 1px 4px rgba(200, 200, 200, 0.356);
+  }
+}
+
+.review__text::before {
+  top: -8rem;
+  left: -3rem;
+  z-index: -1000;
+  color: #e9e5f0;
+  position: absolute;
+  content: '\f10d';
+  font-family: "Font Awesome 5 Free";
+  font-size: 10rem;
+  font-weight: 900;
+}
+
+@media (max-width: 37.5em) {
+  .review__text::before {
+    top: -4rem;
+    font-size: 6rem;
+  }
+}
+
+.review__text::after {
+  top: 17rem;
+  right: -3rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: -1000;
+  color: #e9e5f0;
+  position: absolute;
+  content: '\f10d';
+  font-family: "Font Awesome 5 Free";
+  font-size: 10rem;
+  font-weight: 900;
+}
+
+@media (max-width: 37.5em) {
+  .review__text::after {
+    top: 12rem;
+    font-size: 6rem;
   }
 }
 
@@ -819,7 +855,7 @@ body.sidebarOpen {
 
 .play:hover > i {
   color: #7fc3ba;
-  border: 1px solid #7fc3ba;
+  border: 1px solid #fff;
   background-color: #fff;
 }
 
@@ -1302,7 +1338,7 @@ body.sidebarOpen {
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 2.5rem;
   height: 2px;
-  background-color: white;
+  background-color: #fff;
   display: inline-block;
 }
 
@@ -1388,6 +1424,8 @@ body.sidebarOpen {
 }
 
 .modal {
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1400,8 +1438,7 @@ body.sidebarOpen {
           align-items: center;
   height: 100vh;
   width: 100%;
-  border: 1px solid black;
-  background-color: rgba(0, 0, 0, 0.555);
+  background-color: rgba(0, 0, 0, 0.565);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s, visibility .3s;
@@ -1410,7 +1447,6 @@ body.sidebarOpen {
 }
 
 .modal.active {
-  z-index: 1000;
   visibility: visible;
   opacity: 1;
 }
@@ -1419,8 +1455,8 @@ body.sidebarOpen {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  color: white;
-  font-size: 2.5rem;
+  color: #fff;
+  font-size: 3rem;
   padding: .5rem;
   cursor: pointer;
   -webkit-transition: all .2s;
@@ -1442,6 +1478,7 @@ body.sidebarOpen {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   padding: 10rem 0;
   margin-top: -10vh;
 }
@@ -1506,5 +1543,6 @@ body.sidebarOpen {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 10rem 0;
     margin-top: -10vh;
 }
 
 .presentation {
-    // border: 1px solid black;
     max-width: 65rem;
     margin-top: 4vh;
 
@@ -41,9 +41,9 @@
 }
 
 .section-feedbacks {
-    // border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
 }

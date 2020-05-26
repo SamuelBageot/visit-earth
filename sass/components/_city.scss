@@ -1,5 +1,4 @@
 .city {
-    // border: 1px solid black;
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -23,7 +22,6 @@
     }
 
     &__text {
-        // border: 1px solid red;
         max-width: 45%;
         display: flex;
         flex-direction: column;
@@ -36,7 +34,6 @@
 
     &__image {
         max-width: 55%;
-        // height: auto;
         max-height: 55rem;
 
         @include respond(tab-port) {

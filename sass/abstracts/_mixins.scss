@@ -11,11 +11,11 @@
 
         @include respond(tab-port) {
             transform: translateY(0);
-            box-shadow: 2px 3px 20px rgb(122, 122, 122);
         }
     }
 }
 
+// RESPONSIVE BREAKPOINTS
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content };    // 600px

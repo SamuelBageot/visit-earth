@@ -34,6 +34,22 @@
         }
     }
 
+    &--blue {
+        @include buttonColor(linear-gradient(to right, #578de5, #87c5c2));
+    }
+
+    &--blue-purple {
+        @include buttonColor(linear-gradient(to right, #a286b4, #b5c8fd));
+    }
+    
+    &--yellow {
+        @include buttonColor($color-secondary, 1px solid $color-secondary, black);
+    }
+
+    &--yellow-orange {
+        @include buttonColor(linear-gradient(to right, #fac268, #f98642));
+    }
+
     &--white {
         background-color: transparent;
         color: $font-color-1;
@@ -51,25 +67,10 @@
         }
     }
     
-    &--blue {
-        @include buttonColor(linear-gradient(to right, #578de5, #87c5c2));
-    }
-
-    &--blue-purple {
-        @include buttonColor(linear-gradient(to right, #a286b4, #b5c8fd));
-    }
-    
-    &--yellow {
-        @include buttonColor($color-secondary, 1px solid $color-secondary, black);
-    }
-
-    &--yellow-orange {
-        @include buttonColor(linear-gradient(to right, #fac268, #f98642));
-    }
-    
     &--grey {
         background-color: transparent;
         border: 1px solid rgb(90, 90, 90);
         color: rgb(90, 90, 90);
+        transition: all .2s;
     }
 }
