@@ -7,6 +7,14 @@
           box-sizing: inherit;
 }
 
+@media (max-width: 75em) {
+  *,
+  *::before,
+  *::after {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 :root {
   font-size: 62.5%;
 }
@@ -1419,8 +1427,6 @@ body.sidebarOpen {
 .sidebar.open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
 }
 
 .modal {

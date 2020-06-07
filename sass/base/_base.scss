@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+
+    @include respond(tab-land) {
+        -webkit-tap-highlight-color: transparent;
+    }
 }
 
 :root {
