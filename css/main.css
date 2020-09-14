@@ -420,7 +420,7 @@ body.sidebarOpen {
 
 .btn--white:hover {
   background-color: white;
-  color: #7fc3ba;
+  color: #80c1b9;
 }
 
 @media (max-width: 37.5em) {
@@ -862,7 +862,7 @@ body.sidebarOpen {
 }
 
 .play:hover > i {
-  color: #7fc3ba;
+  color: #80c1b9;
   border: 1px solid #fff;
   background-color: #fff;
 }
@@ -895,7 +895,7 @@ body.sidebarOpen {
 }
 
 .header {
-  background-color: #7fc3ba;
+  background-color: #80c1b9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
