@@ -1011,7 +1011,7 @@ body.sidebarOpen {
   @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) {
     .footer {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     }
   }
 }
@@ -1019,12 +1019,6 @@ body.sidebarOpen {
 @media (max-width: 37.5em) {
   .footer {
     padding-top: 4rem;
-  }
-  @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) {
-    .footer {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
-    }
   }
 }
 
@@ -1387,7 +1381,7 @@ body.sidebarOpen {
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
-  background-color: rgba(51, 51, 51, 0.719);
+  background-color: rgba(31, 31, 31, 0.719);
   z-index: 5000;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);

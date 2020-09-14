@@ -15,15 +15,11 @@
     @include respond(tab-port) {
         @supports (clip-path: (polygon(0 0)) or (-webkit-clip-path: polygon(0 0))) {
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
         }
     }
 
     @include respond(phone) {
-        @supports (clip-path: (polygon(0 0)) or (-webkit-clip-path: polygon(0 0))) {
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
-        }
         padding-top: 4rem;
     }
 
