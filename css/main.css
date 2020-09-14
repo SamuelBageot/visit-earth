@@ -921,27 +921,27 @@ body.sidebarOpen {
 }
 
 .header-wrapper {
-  background: url("../../assets/images/fond2.PNG") 2% 15%/15% no-repeat, url("../../assets/images/fond.PNG") right 55%/50% no-repeat;
+  background: url("../../assets/images/fond2.PNG") 2% 15%/15% no-repeat, url("../../assets/images/fond.jpg") right 55%/50% no-repeat;
   height: 100vh;
   width: 60%;
 }
 
 @media (max-width: 75em) {
   .header-wrapper {
-    background: url("../../assets/images/fond2.PNG") 2% 20%/15% no-repeat, url("../../assets/images/fond.PNG") 85% 55%/50% no-repeat;
+    background: url("../../assets/images/fond2.PNG") 2% 20%/15% no-repeat, url("../../assets/images/fond.jpg") 85% 55%/50% no-repeat;
     width: 90%;
   }
 }
 
 @media (max-width: 56.25em) {
   .header-wrapper {
-    background: url("../../assets/images/fond.PNG") center 55%/65% no-repeat;
+    background: url("../../assets/images/fond.jpg") center 55%/65% no-repeat;
   }
 }
 
 @media (max-width: 37.5em) {
   .header-wrapper {
-    background: url("../../assets/images/fond.PNG") center 55%/85% no-repeat;
+    background: url("../../assets/images/fond.jpg") center 55%/85% no-repeat;
   }
 }
 

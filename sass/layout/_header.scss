@@ -16,21 +16,21 @@
     }
     
     &-wrapper {
-        background: url('../../assets/images/fond2.PNG') 2% 15%/15% no-repeat, url('../../assets/images/fond.PNG') right 55%/50% no-repeat;
+        background: url('../../assets/images/fond2.PNG') 2% 15%/15% no-repeat, url('../../assets/images/fond.jpg') right 55%/50% no-repeat;
         height: 100vh;
         width: 60%;
 
         @include respond(tab-land) {
-            background: url('../../assets/images/fond2.PNG') 2% 20%/15% no-repeat, url('../../assets/images/fond.PNG') 85% 55%/50% no-repeat;
+            background: url('../../assets/images/fond2.PNG') 2% 20%/15% no-repeat, url('../../assets/images/fond.jpg') 85% 55%/50% no-repeat;
             width: 90%;
         }
 
         @include respond(tab-port) {
-            background: url('../../assets/images/fond.PNG') center 55%/65% no-repeat;
+            background: url('../../assets/images/fond.jpg') center 55%/65% no-repeat;
         }
 
         @include respond(phone) {
-            background: url('../../assets/images/fond.PNG') center 55%/85% no-repeat;
+            background: url('../../assets/images/fond.jpg') center 55%/85% no-repeat;
         }
     }
 }
